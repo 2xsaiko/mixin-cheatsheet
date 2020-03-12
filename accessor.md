@@ -8,7 +8,7 @@ Parameters: same as target
 Return type: same as target
 
 Example Mixin
-```
+```java
 @Mixin(Foo.class)
 public interface FooAccess {
   @Accessor int getMyInteger();
@@ -16,7 +16,7 @@ public interface FooAccess {
 }
 ```
 Example Usage
-```
+```java
 Foo foo = new Foo();
 FooAccess acc = (FooAccess) foo;
 acc.setMyDouble(foo.getMyInteger() * 4.0);
