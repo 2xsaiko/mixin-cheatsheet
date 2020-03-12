@@ -26,7 +26,7 @@ Method modification:
 ```patch
   public void target() {
 -     double result = Dummy.getInstance().dummy(5);
-+     double result = mixin(Dummy.getInstance(), 5);
++     double result = this.mixin(Dummy.getInstance(), 5);
   }
 + 
 + private double mixin(Dummy self, int i) {
