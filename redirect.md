@@ -25,13 +25,11 @@ Method modification:
 
 ```patch
   public void target() {
-+     double result;
-+     {
-+         Dummy self = Dummy.getInstance();
-+         int i = 5;
-+
-+         result = i * 7.5;
-+     }
 -     double result = Dummy.getInstance().dummy(5);
++     double result = mixin(Dummy.getInstance(), 5);
   }
++ 
++ private double mixin(Dummy self, int i) {
++   return i * 7.5;
++ }
 ```
