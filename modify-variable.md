@@ -33,7 +33,7 @@ private int modifyLocal(int initial, Method parameters, Go here) {
 
 Method Modification
 ```patch
-  public void foo() {
+  public void foo(Method method, Go go) {
     String string = "hello";
     double a = 5.0;
     int i = 4;
