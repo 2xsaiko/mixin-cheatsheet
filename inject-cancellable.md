@@ -22,6 +22,7 @@ Method modification:
 
 ```patch
   public void target() {
+      Dummy.getInstance().dummy();
 +     {
 +         boolean canceled = false;
 +         if (condition) {
@@ -29,6 +30,5 @@ Method modification:
 +         }
 +         if (canceled) return;
 +     }
-      Dummy.getInstance().dummy();
   }
 ```
