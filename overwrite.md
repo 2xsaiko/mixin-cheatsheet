@@ -28,7 +28,7 @@ Method modification:
 ```
 
 Example mixin:
-```
+```java
 @Overwrite
 public int foo(double hi) {
     if(!this.bar) {
@@ -38,10 +38,11 @@ public int foo(double hi) {
 ```
 
 Method modification:
-```
+```patch
 public int foo(double hi) {
-    if(!this.bar) {
-        System.out.println("This should be your last resort");
-    }
+-   oldCode();
++   if(!this.bar) {
++       System.out.println("This should be your last resort");
++   }
 }
 ```
