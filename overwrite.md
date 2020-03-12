@@ -1,5 +1,7 @@
 # `@Overwrite`
 
+[<- Return](README.md)
+
 Completely replaces the target method implementation.
 
 **This conflicts with any other mixin into the same target method. Handle with care.**

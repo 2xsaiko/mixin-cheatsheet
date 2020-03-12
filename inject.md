@@ -1,5 +1,7 @@
 # `@Inject`
 
+[<- Return](README.md)
+
 Injects code into the target method.
 
 Parameters, in order:

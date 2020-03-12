@@ -1,5 +1,7 @@
 # `@Inject`, cancellable
 
+[<- Return](README.md)
+
 Injects code into the target method, if `ci.cancel()` was called, returns after the mixin is done executing.
 
 Parameters: see [`@Inject`](inject.md)

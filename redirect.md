@@ -1,5 +1,7 @@
 # `@Redirect`
 
+[<- Return](README.md)
+
 Redirects a method call, field access, or object construction.
 
 Return type: same as the redirected method call/field access/object construction's return type
