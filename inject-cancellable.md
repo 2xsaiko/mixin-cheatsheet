@@ -8,6 +8,9 @@ Parameters: see [`@Inject`](inject.md)
 
 Return type: see [`@Inject`](inject.md)
 
+Injecting on interface methods:
+You can only inject on TAIL or RETURN!
+
 Example mixin:
 ```java
 @Inject(method = "target()V", at = @At(value = "INVOKE", target = "Lnet/example/Dummy;dummy()V"), cancellable = true)
