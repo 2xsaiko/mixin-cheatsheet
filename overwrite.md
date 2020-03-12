@@ -26,3 +26,22 @@ Method modification:
 -     oldCode();
   }
 ```
+
+Example mixin:
+```
+@Overwrite
+public int foo(double hi) {
+    if(!this.bar) {
+        System.out.println("This should be your last resort");
+    }
+}
+```
+
+Method modification:
+```
+public int foo(double hi) {
+    if(!this.bar) {
+        System.out.println("This should be your last resort");
+    }
+}
+```
