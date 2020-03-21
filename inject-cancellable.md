@@ -8,7 +8,7 @@ Parameters: see [`@Inject`](inject.md)
 
 Return type: see [`@Inject`](inject.md)
 
-Injecting on interface methods:
+Injecting on constructors:
 You can only inject on TAIL or RETURN!
 
 Example mixin:
