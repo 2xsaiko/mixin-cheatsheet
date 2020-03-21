@@ -1,4 +1,4 @@
-# `@ModifyVariable`, cancellable
+# `@ModifyVariable`
 
 [<- Return](README.md)
 
