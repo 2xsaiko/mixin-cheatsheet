@@ -20,24 +20,24 @@ with the same type in the code, then you don't need the index or ordinal, so you
 ```java
 @ModifyVariable(method = "foo", at = @At(value = "INVOKE", target = "someMethod"), index = 2, ordinal = 0)
 private int modifyLocal(int initial, Method parameters, Go here) {
-   return initial * 5;
+    return initial * 5;
 }
 ```
 or
 ```java
 @ModifyVariable(method = "foo", at = @At(value = "INVOKE", target = "someMethod"))
 private int modifyLocal(int initial, Method parameters, Go here) {
-   return initial * 5;
+    return initial * 5;
 }
 ```
 
 Method Modification
 ```patch
-  public void foo(Method method, Go go) {
-    String string = "hello";
-    double a = 5.0;
-    int i = 4;
-+   i = modifyLocal(i);
-    someMethod(i);
-  }
+   public void foo(Method method, Go go) {
+      String string = "hello";
+      double a = 5.0;
+      int i = 4;
++     i = modifyLocal(i);
+      someMethod(i);
+   }
   ```
