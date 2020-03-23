@@ -24,7 +24,7 @@ Method modification:
 
 ```patch
   public void target() {
-      Dummy.getInstance().dummy();
 +     injectedCode();
+      Dummy.getInstance().dummy();
   }
 ```
