@@ -9,6 +9,7 @@ _Note: the method modifications listed in these documents are what the code_ eff
 ### Injectors
  - [`@Inject`](inject.md)
  - [`@Inject`, cancellable](inject-cancellable.md)
+ - [`@Inject`, locals](inject-locals.md)
  - [`@Redirect`](redirect.md)
  - [`@Overwrite`](overwrite.md)
  - [`@ModifyArg`](modify-arg.md)
