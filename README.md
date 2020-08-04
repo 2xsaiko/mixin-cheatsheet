@@ -6,11 +6,17 @@ _Note: the method modifications listed in these documents are what the code_ eff
 
 ## Table of Contents
 
+### Injectors
  - [`@Inject`](inject.md)
  - [`@Inject`, cancellable](inject-cancellable.md)
  - [`@Redirect`](redirect.md)
  - [`@Overwrite`](overwrite.md)
  - [`@ModifyArg`](modify-arg.md)
- - ~~[`@ModifyArgs`](modify-args.md)~~
+ - [`@ModifyArgs`](modify-args.md)
  - ~~[`@ModifyConstant`](modify-constant.md)~~
  - ~~[`@ModifyVariable`](modify-variable.md)~~
+ 
+ ### Others
+  - [`@Invoker`](invoker.md)
+  - [`@Accessor`](accessor.md)
+  
