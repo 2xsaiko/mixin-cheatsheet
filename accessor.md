@@ -32,8 +32,10 @@ Usage:
 
 ```java
   public void myMethod() {
+  	  // Getting the field
       int i = ((AccessorMixin) Dummy.getInstance()).getDummyField();
       
+      // Setting the field
       ((AccessorMixin) Dummy.getInstance()).setDummyField(i + 1);
   }
 ```
