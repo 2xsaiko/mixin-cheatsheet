@@ -2,7 +2,7 @@
 
 [<- Return](README.md)
 
-Allows accessing a field or method from the the target class *only inside the mixin class*. 
+Allows accessing a field or method from the the target class *only inside the mixin class*.
 
 Example mixin:
 ```java
@@ -10,7 +10,7 @@ Example mixin:
 public abstract class MixinDummy {
 	@Shadow
 	private int dummyField;
-	
+
 	@Shadow
 	public abstract void dummyMethod();
 }

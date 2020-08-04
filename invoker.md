@@ -2,7 +2,7 @@
 
 [<- Return](README.md)
 
-Invokes a target method. Useful for calling private or package-private constructors and methods. 
+Invokes a target method. Useful for calling private or package-private constructors and methods.
 
 Parameters:
 

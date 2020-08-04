@@ -15,7 +15,7 @@ Example mixin:
     at = @At(value = "INVOKE_ASSIGN", target = "Lnet/example/Dummy;dummy()D"),
     index = 1
 )
-private double mixin(double original) { 
+private double mixin(double original) {
     return 1.0;
 }
 ```

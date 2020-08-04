@@ -5,7 +5,7 @@
 Changes all arguments in a method invocation.
 
 Parameters:  
-- `Args` 
+- `Args`
 
 Return type: `void`
 
