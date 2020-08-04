@@ -22,3 +22,4 @@ _Note: the method modifications listed in these documents are what the code_ eff
   - [`@Shadow`](shadow.md)
   - [`@Shadow`, final](shadow-final.md)
   - [`@At`](at.md)
+  - [`@Unique`](unique.md)
