@@ -27,4 +27,4 @@ Parameters:
    - `At.Shift.BY` - Shift by an arbitrary number of opcodes. Use the `by` parameter to specify the number of opcodes to shift. 
  - by - Specifies the number of opcodes to shift. Use when `shift` is specified as `At.Shift.BY`. 
  - slice - Specifies the id of the slice to use for the query. Only works with `@Inject` injectors. 
- - id - Specifies the identifier for the injection point. If specified, it's value is appended to the value specified in the outer annotation. 
+ - id - Specifies the identifier for the injection point. If specified, it's value is appended to the value specified in the outer annotation. Use with `@Slice#id`
