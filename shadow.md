@@ -1,0 +1,26 @@
+# `@Shadow`
+
+[<- Return](README.md)
+
+Allows accessing a field or method from the the target class *only inside the mixin class*. 
+
+Example mixin:
+```java
+@Mixin(Dummy.class)
+public abstract class MixinDummy {
+	@Shadow
+	private int dummyField;
+	
+	@Shadow
+	public abstract void dummyMethod();
+}
+```
+
+Usage:
+
+```java
+  public void myInjector(CallbackInfo info) {
+      this.dummyField = newValue;
+      this.dummyMethod();
+  }
+```
