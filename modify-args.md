@@ -16,7 +16,7 @@ Example mixin:
     at = @At(value = "INVOKE", target = "Lnet/example/Dummy;dummy(IIII)V")
 )
 private void mixin(Args args) {
-    args.set(0, 0);
+    args.set(0, args.get(0) - 1);
     args.set(1, 1);
     args.set(2, 0);
     args.set(3, 1);
