@@ -21,7 +21,7 @@ Example mixin:
 @Mixin(Dummy.class)
 public interface AccessorMixin {
 	@Accessor("dummyField")
-	void getDummyField();
+	int getDummyField();
 
 	@Accessor("dummyField")
 	void setDummyField(int value);
