@@ -24,7 +24,7 @@ Method modification:
 
 ```patch
   public void target() {
--     double original = Dummy.getInstance().dummy();
-+     double original = 1.0;
+      double original = Dummy.getInstance().dummy();
++     original = 1.0;
   }
 ```
