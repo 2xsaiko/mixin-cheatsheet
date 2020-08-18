@@ -24,3 +24,14 @@ Usage:
       this.dummyMethod();
   }
 ```
+
+To access fields or methods from the target class' superclass, extend it or implement it. Keeping the class abstract allows you to skip implementing methods. 
+Example mixin:
+```java
+@Mixin(Dummy.class)
+public abstract class MixinDummy extends SuperDummy {
+  public void myInjector(CallbackInfo info) {
+    this.superMethod();
+  }
+}
+```
