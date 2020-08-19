@@ -18,6 +18,11 @@ Example mixin:
 public interface InvokerMixin {
 	@Invoker
 	void invokeDummy(int param1, Object param2, double param3);
+	
+	@Invoker
+	static void invokeDummy2(int param1) {
+		throw new AssertionError();
+	}
 }
 ```
 
@@ -26,5 +31,6 @@ Usage:
 ```java
   public void myMethod() {
       ((InvokerMixin) Dummy.getInstance()).invokeDummy(0, null, 0.0);
+      InvokerMixin.invokeDummy2(0);
   }
 ```
