@@ -49,14 +49,14 @@ Parameters, in order:
 
 Example mixin:
 ```java
-@Redirect(method = "target()Z", at = @At(value = "CONSTANT",args="classValue=net/example/IDummy",shift=Shift.AFTER,ordinal=0))
+@Redirect(method = "target()Z", at = @At(value = "CONSTANT",args="classValue=net/example/Dummy",shift=Shift.AFTER,ordinal=0))
 private boolean mixin(Object targetObj, Class<?> classValue) {
     return false;
 }
 
 //or
 
-@Redirect(method = "target()Z", at = @At(value = "CONSTANT",args="classValue=net/example/IDummy",shift=Shift.AFTER,ordinal=0))
+@Redirect(method = "target()Z", at = @At(value = "CONSTANT",args="classValue=net/example/Dummy",shift=Shift.AFTER,ordinal=0))
 private Class<?> mixin(Object targetObj, Class<?> classValue)
 {
   return Smartie.class;
