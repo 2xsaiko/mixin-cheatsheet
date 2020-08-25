@@ -6,7 +6,7 @@ Redirects a method call, field access, or object construction.
 
 Return type: same as the redirected method call/field access/object construction's return type
 
-Parameters, in order: 
+Parameters, in order:
 
  - _Instance accesses:_ Target instance type
  - Parameters of method call or constructor (none in case of field accesses)

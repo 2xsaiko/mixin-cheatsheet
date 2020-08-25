@@ -8,7 +8,6 @@ Parameters, in order:
 
  - All target method parameters
  - `CallbackInfo` (for `void` return type on target) or `CallbackInfoReturnable<R>`
- - _Optionally:_ Local variables in scope up to the one needed. Needs `@Inject(locals = ..)` set to something other than `NO_CAPTURE` (default)
 
 Return type: `void`
 
