@@ -17,10 +17,13 @@ _Note: the method modifications listed in these documents are what the code_ eff
  - ~~[`@ModifyConstant`](modify-constant.md)~~
  - [`@ModifyVariable`](modify-variable.md)
 
- ### Others
+ ### Non-Injectors
   - [`@Invoker`](invoker.md)
   - [`@Accessor`](accessor.md)
   - [`@Shadow`](shadow.md)
   - [`@Shadow`, final](shadow-final.md)
   - [`@At`](at.md)
   - [`@Unique`](unique.md)
+
+### Other helpful docs
+  - [Changing your mixin's priority](mixin-priority.md)
