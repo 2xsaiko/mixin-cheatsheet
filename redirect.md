@@ -3,6 +3,7 @@
 [<- Return](README.md)
 
 Redirects a method call, field access, or object construction.
+To access the target method's parameters, simply append them to the redirector's parameters. 
 
 Return type: same as the redirected method call/field access/object construction's return type
 
@@ -15,7 +16,7 @@ Parameters, in order:
 
 Example mixin:
 ```java
-@Redirect(method = "target()V", at = @At(value = "INVOKE", target = "Lnet/example/Dummy;dummy(I)D"))
+@Redirect(method = "target(I)V", at = @At(value = "INVOKE", target = "Lnet/example/Dummy;dummy(I)D"))
 private double mixin(Dummy self, int i) {
     return i * 7.5;
 }
@@ -24,7 +25,7 @@ private double mixin(Dummy self, int i) {
 Method modification:
 
 ```patch
-  public void target() {
+  public void target(int a) {
 +     double result;
 +     {
 +         Dummy self = Dummy.getInstance();
@@ -35,7 +36,6 @@ Method modification:
 -     double result = Dummy.getInstance().dummy(5);
   }
 ```
-
 
 ## `@Redirect` Instanceof Mode
 
