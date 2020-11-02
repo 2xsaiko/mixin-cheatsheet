@@ -13,30 +13,31 @@ Shadowing the field is done the same way as a normal field, however finding the 
 
 - Put your cursor on a line inside the anonymous class
 
-![foo](TODO)
+![foo](https://i.imgur.com/nZ5LzAu.png)
 
 - Click on View -> Show Bytecode
 
-![foo](TODO)
+![foo](https://i.imgur.com/10V5nt2.png)
 
 - Find the name of the field you need by index
 
-![foo](TODO)
+![foo](https://i.imgur.com/HqL5Zg7.png)
 
 
 ### Eclipse
 `TODO`
 
-### Vscode
-Nope
+
+## `@Dynamic` Annotation
+It might help IDE extensions such as [Minecraft Development](minecraftdev.org/) to know that the shadowed field is synthetic (compiler generated) to prevent unnecessary warnings. To do this, simply annotate the field with a `@Dynamic` annotation.
 
 Example mixin:
 ```java
 @Mixin(target="path/to/Dummy$1")
 public abstract class MixinDummy_1 {
-  @Dynamic
-  @Final
+	@Dynamic
+	@Final
 	@Shadow
-	private int field_1234;
+	private Profiler field_21965;
 }
 ```
