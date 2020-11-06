@@ -49,16 +49,15 @@ Parameters, in order:
 
 Example mixin:
 ```java
-@Redirect(method = "target()Z", at = @At(value = "CONSTANT",args="classValue=net/example/Dummy",shift=Shift.AFTER,ordinal=0))
-private boolean mixin(Object targetObj, Class<?> classValue) {
+@Redirect(method = "target()Z", at = @At(value = "CONSTANT", args = "classValue=net/example/Dummy", shift = Shift.AFTER, ordinal = 0))
+public boolean mixin(Object targetObj, Class<?> classValue) {
     return false;
 }
 
 //or
 
-@Redirect(method = "target()Z", at = @At(value = "CONSTANT",args="classValue=net/example/Dummy",shift=Shift.AFTER,ordinal=0))
-private Class<?> mixin(Object targetObj, Class<?> classValue)
-{
+@Redirect(method = "target()Z", at = @At(value = "CONSTANT", args = "classValue=net/example/Dummy", shift = Shift.AFTER, ordinal = 0))
+public Class<?> mixin(Object targetObj, Class<?> classValue) {
   return Smartie.class;
 }
 ```
@@ -67,14 +66,14 @@ Method modification:
 
 ```patch
   public boolean target(IDummy obj) {
-+   return mixin(obj,Dummy.class);
++   return this.mixin(obj,Dummy.class);
 -   return obj instanceof Dummy;
   }
   
   // or
   
   public boolean target(IDummy obj) {
-+   return obj != null && obj.isAssignableFrom(mixin(obj,Dummy.class));
++   return obj != null && obj.isAssignableFrom(this.mixin(obj,Dummy.class));
 -   return obj instanceof Dummy;
   }
 ```
