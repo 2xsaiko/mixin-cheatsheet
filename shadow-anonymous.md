@@ -2,26 +2,26 @@
 
 [<- Return](README.md)
 
-Allows accessing a 'local variable' used in an anonymous class, which is actually just a constant field.
+Allows accessing a 'local variable' used in an anonymous class, which is actually just a final instance field.
 
 Shadowing the field is done the same way as a normal field, however finding the exact name of the field might be a bit tricky.
 
 ### IntelliJ Idea
 - Open the class file
 
-![foo](https://i.imgur.com/hYWE1O3.png)
+![bytecode_1](assets/bytecode_1.png)
 
 - Put your cursor on a line inside the anonymous class
 
-![foo](https://i.imgur.com/nZ5LzAu.png)
+![bytecode_2](assets/bytecode_2.png)
 
 - Click on View -> Show Bytecode
 
-![foo](https://i.imgur.com/10V5nt2.png)
+![bytecode_3](assets/bytecode_3.png)
 
 - Find the name of the field you need by index
 
-![foo](https://i.imgur.com/HqL5Zg7.png)
+![bytecode_4](assets/bytecode_4.png)
 
 
 ### Eclipse
