@@ -22,6 +22,7 @@ _Note: the method modifications listed in these documents are what the code_ eff
   - [`@Accessor`](accessor.md)
   - [`@Shadow`](shadow.md)
   - [`@Shadow`, final](shadow-final.md)
+  - [`@Shadow`, anonymous class](shadow-anonymous.md)
   - [`@At`](at.md)
   - [`@Unique`](unique.md)
 
