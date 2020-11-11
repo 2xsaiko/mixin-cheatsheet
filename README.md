@@ -28,3 +28,4 @@ _Note: the method modifications listed in these documents are what the code_ eff
 
 ### Other helpful docs
   - [Changing your mixin's priority](mixin-priority.md)
+  - [Mixing into classes that may not exist at runtime](pseudo-mixin.md)
