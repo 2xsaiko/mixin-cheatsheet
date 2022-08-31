@@ -73,7 +73,7 @@ Method modification:
   // or
   
   public boolean target(IDummy obj) {
-+   return obj != null && obj.isAssignableFrom(this.mixin(obj,Dummy.class));
++   return obj != null && obj.getClass().isAssignableFrom(this.mixin(obj,Dummy.class));
 -   return obj instanceof Dummy;
   }
 ```
