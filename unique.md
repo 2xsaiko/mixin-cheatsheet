@@ -26,3 +26,46 @@ public class MixinDummy {
 }
 ```
 The method and field given above will get added to `Dummy`, but under a different, unique name.
+
+To get an annotated field or method from another class, use a duck interface and cast the instance of the class to the duck interface and call the method inside the interface.
+
+Example:-
+```
+@Mixin(Dummy.class)
+public class MixinDummy implements DummyAccess {
+	@Unique
+	private int dummyField = 0;
+	
+	@Unique
+	private void dummyMethod(int i) {
+		System.out.println(i);
+	}
+	
+	@Override
+	public int getDummyField() {
+		return this.dummyField;
+	}
+	
+	@Override
+	public void callDummyMethod(int i) {
+		this.dummyMethod(i);
+	}
+}
+```
+```
+public interface DummyAccess {
+	int getDummyField();
+	
+	void callDummyMethod(int i);
+}
+```
+Example usage:-
+```
+public class AnotherDummy {
+	public void doSomething(Dummy instance) {
+		int i = ((DummyAccess)instance).getDummyField();
+		
+		((DummyAccess)instance).callDummyMethod(i);
+	}
+}
+```
